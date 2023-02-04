@@ -36,12 +36,16 @@
             <h1>CONTACTANOS</h1>
             <h3>🧉</h3>
             <div class="contenedorImg">
-                <img class="img" src="../assets/img/fotoInfex.jpeg" alt="mate1">
+                <!-- <img class="img" src="../assets/img/fotoInfex.jpeg" alt="mate1"> -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25550.95491219113!2d-68.04369949678512!3d-38.94805916520849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1675522767195!5m2!1ses-419!2sar"
+                    width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
             <section>
                 <article>
-                    <form class="frm">
+                <!--  <form class="frm">
                         <input type="text" name="Nombre" placeholder="Ingrese su nombre" >
                         <input type="text" name="Apellido" placeholder="Ingrese su apellido" >
                         <input type="email" name="email" placeholder="user@hotmail.com" >
@@ -52,6 +56,26 @@
                             
                             <input type="checkbox" name="aceptar" value="1">
                         </div>
+                    </form> -->
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label" >Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com">
+                            <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Acepto términos y condiciones</label>
+                        </div>
+                        <button type="submit" class="btn btn-success">Enviar</button>
                     </form>
                 </article>
             </section>
@@ -61,7 +85,7 @@
             <br>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quos doloribus ea suscipit deleniti
                 consectetur illo alias iusto architecto aut.</p>
-            <button class="btn">CONOCENOS</button>
+            <button class="btnS">CONOCENOS</button>
             <div>
                 <img class="animate__animated animate__bounce" src="../assets/img/logoMateros.png" alt="logo">
             </div>
