@@ -232,6 +232,10 @@ a {
     width: 20%;
 }
 
+iframe{
+    margin: auto;
+}
+
 @media screen and (max-width: 768px) {
     .contenedor {
         grid-template-columns: 1fr;

@@ -35,7 +35,7 @@
             <h1>MATERO´S</h1>
             <h3>DESDE EL 2001</h3>
             <div class="contenedorImg">
-                <img class="img" src="./assets/img/fotoInfex.jpeg" alt="mate1">
+                <img class="img animate__animated animate__pulse" src="./assets/img/fotoInfex.jpeg" alt="mate1">
             </div>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim cum molestias doloribus ipsum numquam velit
                 sit, eaque facilis repudiandae explicabo iste consequuntur sed quam sequi necessitatibus!</p>
@@ -71,7 +71,28 @@
             <br>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quos doloribus ea suscipit deleniti
                 consectetur illo alias iusto architecto aut.</p>
-            <button class="btn">CONOCENOS</button>
+            <!-- Button trigger modal -->
+            <button type="button" class="btnS btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                CONOCENOS
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">MATERO´S 🧉</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi saepe dolore ipsa, blanditiis debitis in. Et deserunt ipsam fugit maxime accusamus qui vitae, voluptates perspiciatis molestias corrupti, aut neque possimus magni, iste quae facilis reprehenderit officia veniam. Quo atque iure assumenda labore, natus aspernatur odio, at, sint ut expedita qui!</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div>
                 <img class="animate__animated animate__bounce" src="./assets/img/logoMateros.png" alt="logo">
             </div>
