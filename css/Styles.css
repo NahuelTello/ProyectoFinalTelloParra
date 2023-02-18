@@ -1,257 +1,213 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
-    font-family: "GothamBook";
-    background-color: #EAE7B1;
-    color: black;
-}
+  font-family: "GothamBook";
+  background-color: #EAE7B1;
+  color: black; }
+
 @font-face {
-    font-family: "GothamBook";
-    src: url(../assets/Fonts/GothamBook.ttf);
-}
+  font-family: "GothamBook";
+  src: url(../assets/Fonts/GothamBook.ttf); }
 
 a {
-    text-decoration: none;
-    color: black;
-}
+  text-decoration: none;
+  color: black; }
 
 .contenedor {
-    margin: auto;
-    width: 90%;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto 3fr auto;
-    grid-template-areas:
-        "header header"
-        "main aside"
-        "footer footer"
-    ;
-    gap: 10px;
-}
+  margin: auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto 3fr auto;
+  grid-template-areas: "header header" "main aside" "footer footer";
+  gap: 10px; }
 
-.header { 
-    background-color: #61876E;
-    padding: 1.2rem;
-    grid-area: header;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 3px;
-}
-
-.header img {
+header {
+  background-color: #61876E;
+  padding: 1.2rem;
+  grid-area: header;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 3px; }
+  header img {
     width: 120px;
     border: none;
     border-radius: 50%;
-    margin: auto;
-}
-
-.header nav ul {
+    margin: auto; }
+  header nav ul {
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
     padding: 1rem;
-    border-radius: 3px;
-}
-
-.header nav ul a {
+    border-radius: 3px; }
+  header nav ul a {
     color: white;
     text-decoration: none;
-    padding: 1rem;
-
-}
-
-.header nav ul a:hover {
-    background-color: #61876E;
-    color: #A6BB8D;
-}
+    padding: 1rem; }
+    header nav ul a:hover {
+      background-color: #61876E;
+      color: #A6BB8D; }
 
 .main {
-    background-color: white;
-    padding: 1.2rem;
-    grid-area: main;
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    border-radius: 3px;
-}
-
-.main h1 {
+  background-color: white;
+  padding: 1.2rem;
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 3px; }
+  .main h1 {
     color: black;
-    text-align: center;
-}
-.main h3 {
-    text-align: center;
-}
-.main p {
+    text-align: center; }
+  .main h3 {
+    text-align: center; }
+  .main p {
     color: grey;
     padding: 1rem;
     line-height: 1.5;
-}
+    text-align: center; }
 
-.contenedorImg{
-    margin-top: 1rem;
-    display: flex;
-}
+.contenedorImg {
+  margin-top: 1rem;
+  display: flex; }
 
-.img{
-    border-radius: 10px;
-    width: 90%;
-    margin: auto;
-}
+.img {
+  border-radius: 10px;
+  width: 90%;
+  margin: auto; }
 
-.card{
-    margin: auto;
-    padding: 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.subCard{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin: auto;
-    text-align: center;
-}
-.subCard img{
+.cardMain {
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-items: center; }
+
+.subCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  text-align: center; }
+  .subCard img {
     border-radius: 10px;
     width: 180px;
-    margin: auto;
-}
-.subCard h4,p{
-    text-align: center;
-}
-
+    margin: auto; }
+  .subCard h4, .subCard p {
+    text-align: center; }
 
 .aside {
-    background-color: #e5e6e6;
-    padding: 1.2rem;
-    grid-area: aside;
+  background-color: #e5e6e6;
+  padding: 1.2rem;
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  border-radius: 3px; }
+  .aside img {
+    width: 120px; }
+  .aside h2 {
+    text-align: center; }
+  .aside p {
+    text-align: center;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    color: black;
-    border-radius: 3px;
-}
-.rojo{
-    color: red;
-}
-.aside img {
-    width: 120px;
-}
-
-.btnS{
+    align-items: center; }
+  .aside .mateAside {
     margin: auto;
-    width: 200px;
-    height: 50px;
-    background-color: #61876E;
-    border: none;
-    border-radius: 3px;
-    color: black;
-    font-size: large;
-    font-family:"GothamBook";
-}
-.btnS:hover{
-    background-color: #A6BB8D;
-}
+    width: 100%;
+    border-radius: 3px; }
+
+.btnS {
+  margin: auto;
+  width: 200px;
+  height: auto;
+  background-color: #61876E;
+  border: none;
+  border-radius: 3px;
+  color: black;
+  font-size: large;
+  font-family: "GothamBook"; }
+  .btnS:hover {
+    background-color: #A6BB8D; }
 
 .frm {
-    display: flex;
-    margin: auto;
-    flex-direction: column;
-}
-.frm input {
+  display: flex;
+  margin: auto;
+  flex-direction: column; }
+  .frm input {
     font-family: "GothamBook";
     width: auto;
     height: 50px;
     border: none;
     border-radius: 3px;
-    margin-top: 0.5rem;
-}
+    margin-top: 0.5rem; }
+    .frm input:hover {
+      color: black;
+      background-color: #A6BB8D; }
 
-.frm input:hover{
-    color: black;
-    background-color: #A6BB8D;
-}
+.frm_sub {
+  /* background-image: linear-gradient(to right, #61876E,#A6BB8D); */
+  margin: auto;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .frm_sub input {
+    margin: auto;
+    width: 1rem; }
 
-.frm_sub{
-    /* background-image: linear-gradient(to right, #61876E,#A6BB8D); */
-    margin: auto;
-    margin-top: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.frm_sub input{
-    margin: auto;
-    width: 1rem;
-} 
-.cardProduct{
-    margin: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
+.cardProduct {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
 
-    
-}
+.subCardProduct {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  background-image: linear-gradient(#61876E, #A6BB8D); }
 
-.subCardProduct{
-    margin: auto;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    justify-content: center;
-    background-image: linear-gradient(#61876E, #A6BB8D);
-}
+.imgCard {
+  margin: auto;
+  margin-top: 1rem;
+  width: 240px;
+  border-radius: 3px; }
 
-.imgCard{
-    margin: auto;
-    margin-top: 1rem;
-    width: 240px;
-    border-radius: 3px;
-}
 .footer {
-    background-color: #61876E;
-    padding: 1.2rem;
-    grid-area: footer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    border-radius: 3px;
-}
-.redes{
-    width: 20%;
-}
+  background-color: #61876E;
+  padding: 1.2rem;
+  grid-area: footer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-radius: 3px; }
 
-iframe{
-    margin: auto;
-}
+.redes {
+  width: 20%; }
 
-@media screen and (max-width: 768px) {
-    .contenedor {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto 2fr auto;
-        grid-template-areas:
-            "header"
-            "main"
-            "aside"
-            "footer"
-        ;
-    }
+iframe {
+  margin: auto;
+  width: 90%; }
 
-    .card{
-        grid-area: main;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-}
+@media only screen and (min-width: 1024px) {
+  margin: auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto 3fr auto;
+  grid-template-areas: "header header" "main aside" "footer footer";
+  gap: 10px; }

@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+$vista:desktop;
+
+body {
+    font-family: "GothamBook";
+    background-color: #EAE7B1;
+    color: black;
+}
+@font-face {
+    font-family: "GothamBook";
+    src: url(../assets/Fonts/GothamBook.ttf);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.contenedor {
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 3fr auto;
+    grid-template-areas:
+        "header header"
+        "main aside"
+        "footer footer"
+    ;
+    gap: 10px;
+}
+
+header {
+    background-color: #61876E;
+    padding: 1.2rem;
+    grid-area: header;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 3px;
+    img {
+        width: 120px;
+        border: none;
+        border-radius: 50%;
+        margin: auto;
+    }
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem;
+        border-radius: 3px;
+    }
+    nav ul a {
+        color: white;
+        text-decoration: none;
+        padding: 1rem;
+            &:hover{
+                background-color: #61876E;
+                color: #A6BB8D;
+            }
+    }
+}
+.main {
+    background-color: white;
+    padding: 1.2rem;
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 3px;
+    h1 {
+        color: black;
+        text-align: center;
+    }
+    h3 {
+        text-align: center;
+    }
+    p {
+        color: grey;
+        padding: 1rem;
+        line-height: 1.5;
+        text-align: center;
+    }
+}
+.contenedorImg {
+    margin-top: 1rem;
+    display: flex;
+}
+.img {
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+}
+.cardMain {
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+.subCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    img {
+        border-radius: 10px;
+        width: 180px;
+        margin: auto;
+    }
+    h4,p {
+    text-align: center;
+    }
+}
+
+.aside {
+    background-color: #e5e6e6;
+    padding: 1.2rem;
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    border-radius: 3px;
+    img {
+            width: 120px;
+        }
+    h2{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+    .mateAside {
+        margin: auto;
+        width: 100%;
+        border-radius: 3px;
+    }
+}
+
+.btnS {
+    margin: auto;
+    width: 200px;
+    height: auto;
+    background-color: #61876E;
+    border: none;
+    border-radius: 3px;
+    color: black;
+    font-size: large;
+    font-family: "GothamBook";
+    &:hover {
+        background-color: #A6BB8D;
+    }
+}
+
+.frm{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    input{
+        font-family: "GothamBook";
+        width: auto;
+        height: 50px;
+        border: none;
+        border-radius: 3px;
+        margin-top: 0.5rem;
+        &:hover {
+            color: black;
+            background-color: #A6BB8D;
+        }
+    }
+}
+
+.frm_sub {
+    /* background-image: linear-gradient(to right, #61876E,#A6BB8D); */
+    margin: auto;
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    input {
+        margin: auto;
+        width: 1rem;
+    }
+}
+
+.cardProduct {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subCardProduct {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    background-image: linear-gradient(#61876E, #A6BB8D);
+}
+
+.imgCard {
+    margin: auto;
+    margin-top: 1rem;
+    width: 240px;
+    border-radius: 3px;
+}
+
+.footer {
+    background-color: #61876E;
+    padding: 1.2rem;
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.redes {
+    width: 20%;
+}
+
+iframe {
+    margin: auto;
+    width: 90%;
+}
+@if $vista == desktop {
+    @media only screen and (min-width:1024px){
+        margin: auto;
+        width: 90%;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto 3fr auto;
+        grid-template-areas:
+            "header header"
+            "main aside"
+            "footer footer";
+            gap: 10px;
+    }
+}   @else if $vista == mobile{
+        @media screen and (max-width: 768px) {
+            .contenedor {
+                    grid-template-columns: 1fr;
+                    grid-template-rows: auto 2fr auto;
+                    grid-template-areas:
+                    "header"
+                    "main"
+                    "aside"
+                    "footer"
+                ;
+            }
+        
+            .card {
+                grid-area: main;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+            }
+        }
+    } @else {
+        @media screen and (max-width: 768px) {
+                .contenedor {
+                    grid-template-columns: 1fr;
+                    grid-template-rows: auto 2fr auto;
+                    grid-template-areas:
+                        "header"
+                        "main"
+                        "aside"
+                        "footer"
+                    ;
+                }
+        
+                .card {
+                    grid-area: main;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+            }
+    }
+
