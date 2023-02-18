@@ -1,7 +1,7 @@
 {
   "name": "preentrega1telloparra",
   "version": "1.0.0",
-  "description": "",
+  "description": "Pagina de ventas de mates y accesorios para el mismo",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/NahuelTello/PreEntrega1TelloParra.git"
   },
-  "author": "",
+  "author": "Matias Nahuel Tello Parra",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/NahuelTello/PreEntrega1TelloParra/issues"
