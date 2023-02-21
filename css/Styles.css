@@ -27,30 +27,37 @@ a {
 
 header {
   background-color: #61876E;
-  padding: 1.2rem;
   grid-area: header;
-  display: flex;
   justify-content: space-around;
   align-items: center;
-  border-radius: 3px; }
-  header img {
-    width: 120px;
-    border: none;
-    border-radius: 50%;
-    margin: auto; }
-  header nav ul {
-    list-style-type: none;
+  border-radius: 10px;
+  margin-top: 10px; }
+  header .mi-navbar {
+    width: 90%;
+    margin: 0 auto;
     display: flex;
-    justify-content: flex-end;
-    padding: 1rem;
-    border-radius: 3px; }
-  header nav ul a {
-    color: white;
-    text-decoration: none;
-    padding: 1rem; }
-    header nav ul a:hover {
-      background-color: #61876E;
-      color: #A6BB8D; }
+    justify-content: space-between; }
+    header .mi-navbar .item--ul {
+      list-style: none;
+      padding: 10px;
+      display: flex;
+      align-items: left; }
+    header .mi-navbar .mis-item--li {
+      padding: 10px; }
+    header .mi-navbar a {
+      font-size: auto;
+      color: white;
+      text-decoration: none;
+      padding: 1rem; }
+      header .mi-navbar a:hover {
+        background-color: #61876E;
+        color: #A6BB8D; }
+  header .logo {
+    padding: 5px; }
+    header .logo img {
+      width: 200px;
+      padding: 5px;
+      margin: auto; }
 
 .main {
   background-color: white;
@@ -203,11 +210,19 @@ iframe {
   margin: auto;
   width: 90%; }
 
-@media only screen and (min-width: 1024px) {
-  margin: auto;
-  width: 90%;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: auto 3fr auto;
-  grid-template-areas: "header header" "main aside" "footer footer";
-  gap: 10px; }
+@media screen and (max-width: 768px) {
+  nav {
+    align-items: center; }
+  nav ul {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between; }
+  .contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 2fr auto;
+    grid-template-areas: "header" "main" "aside" "footer"; }
+  .card {
+    grid-area: main;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; } }
