@@ -23,8 +23,8 @@ a {
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto 3fr auto;
   grid-template-areas: "header header"
- "main aside"
- "footer footer";
+  "main aside"
+  "footer footer";
   gap: 10px; }
 
 header {
