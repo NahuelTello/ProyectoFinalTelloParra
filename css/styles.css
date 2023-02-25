@@ -22,9 +22,7 @@ a {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto 3fr auto;
-  grid-template-areas: "header header"
-  "main aside"
-  "footer footer";
+  grid-template-areas: "header header" "main aside" "footer footer";
   gap: 10px; }
 
 header {
@@ -200,10 +198,16 @@ header {
   padding: 1.2rem;
   grid-area: footer;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center; }
+
+.autor {
+  display: flex;
   align-items: center;
-  text-align: center;
-  border-radius: 3px; }
+  flex-direction: row; }
+  .autor img {
+    width: 3%; }
 
 .redes {
   width: 20%; }
@@ -222,10 +226,7 @@ iframe {
   .contenedor {
     grid-template-columns: 1fr;
     grid-template-rows: auto 2fr auto;
-    grid-template-areas: "header"
- "main"
- "aside"
- "footer"; }
+    grid-template-areas: "header" "main" "aside" "footer"; }
   .card {
     grid-area: main;
     flex-direction: column;
