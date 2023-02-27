@@ -48,7 +48,8 @@ header {
       font-size: auto;
       color: white;
       text-decoration: none;
-      padding: 1rem; }
+      padding: 1rem;
+      font-size: 1.5rem; }
       header .mi-navbar a:hover {
         background-color: #61876E;
         color: #A6BB8D; }
@@ -227,7 +228,7 @@ iframe {
     grid-template-columns: 1fr;
     grid-template-rows: auto 2fr auto;
     grid-template-areas: "header" "main" "aside" "footer"; }
-  .card {
+  .cardMain {
     grid-area: main;
     flex-direction: column;
     justify-content: space-around;

@@ -59,6 +59,7 @@ header {
             color: white;
             text-decoration: none;
             padding: 1rem; 
+            font-size: 1.5rem;
             &:hover {
                 background-color: #61876E;
                 color: #A6BB8D;
@@ -268,7 +269,6 @@ iframe {
         flex-direction: column;
         justify-content: space-between;
     }
-
     .contenedor {
         grid-template-columns: 1fr;
         grid-template-rows: auto 2fr auto;
@@ -280,7 +280,7 @@ iframe {
         ;
     }
 
-    .card {
+    .cardMain {
         grid-area: main;
         flex-direction: column;
         justify-content: space-around;
